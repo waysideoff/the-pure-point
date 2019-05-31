@@ -1,0 +1,108 @@
+:root {
+  --color-primary: #003366;
+  --color-primary-light: #7abcff;
+  --color-primary-dark: #000c18;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --line: 1px solid var(--color-grey-light-2);
+  --margin-bottom-big: margin-bottom: 8rem; }
+
+*,
+*::after,
+*::before {
+  margin: 100;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: .5rem;
+  background-image: linear-gradient(to right bottom, var(--color-primary-light, 0.8), var(--color-primary-dark, 0.8));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  background-color: var(--color-primary); }
+
+.logo {
+  height: 12.25rem;
+  margin-left: -2rem; }
+
+.main {
+  padding-top: 20rem; }
+  .main__text-box {
+    padding-top: 20rem; }
+
+.heading-primary {
+  height: 85vh; }
+
+.site-header {
+  position: fixed;
+  padding: .5rem;
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: stretch;
+  align-items: center; }
+
+.main-menu__item {
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--color-primary-dark);
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 700;
+  position: relative;
+  font-weight: 900;
+  font-size: 12px; }
+
+.main-menu__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--color-primary-light);
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s; }
+
+.main-menu__item:hover::before, .main-menu__item--active::before {
+  transform: scaleY(1);
+  width: 100%; }
+
+.main-menu__item:active::before {
+  background-color: var(--color-primary-dark); }
+
+.main-menu__link:link, .main-menu__link:visited {
+  color: var(--color-grey-light-1);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1.5rem 3rem;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center; }
+
+.main-menu__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 2rem;
+  fill: currentColor; }

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch sass/main.scss -o css/main.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/waysideoff/the-pure-point/issues"
   },
-  "homepage": "https://github.com/waysideoff/the-pure-point#readme"
+  "homepage": "https://github.com/waysideoff/the-pure-point#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
 }
