@@ -1,9 +1,14 @@
 .site-header {
 	position: fixed;
-	padding: .5rem;
+	padding: 0 3rem;
+	right: 0;
+    left: 0;
+    top: 0;
 	width: 100%;
 	font-size: 1.4rem;
-	background-color: #fff;
+	margin: 0 0;
+	background-color: var(--color-grey-light-2);
+	box-shadow: var(--shadow-dark);
 	
 	display: flex;
 	justify-content: stretch;
